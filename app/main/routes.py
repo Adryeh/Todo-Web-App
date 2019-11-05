@@ -1,6 +1,6 @@
 from flask import render_template, request, Blueprint, redirect
 from app.models import Post, Todo
-from app import app, db
+from app import db
 
 
 main = Blueprint('main', __name__)
