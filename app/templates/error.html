@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Error</title>
+{% endblock %}
+{% block body %}
+    <div class="error-block">
+    <h1>Possible issues:</h1>
+        <ul>
+            <li>Empty task</li>
+            <li>Only digit task</li>
+        </ul>
+        <a class="btn add-button" href="/">Back</a>
+    </div>
+{% endblock %}
