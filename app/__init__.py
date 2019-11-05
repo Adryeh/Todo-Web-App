@@ -21,4 +21,9 @@ app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
 mail = Mail(app)
 
 
-from app import routes
+from app.users.routes import users
+from app.main.routes import main
+from app.posts.routes import posts
+app.register_blueprint(users)
+app.register_blueprint(posts)
+app.register_blueprint(main)
