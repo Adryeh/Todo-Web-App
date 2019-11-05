@@ -56,7 +56,3 @@ def update(id):
         return render_template('update.html', task=task)
 
 
-@main.route('/error')
-def error():
-    return render_template('error.html')
-
